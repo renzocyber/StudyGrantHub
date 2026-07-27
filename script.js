@@ -1,19 +1,49 @@
-function searchCountries() {
+document.addEventListener("DOMContentLoaded", () => {
 
-    let input = document.getElementById("searchInput").value.toLowerCase();
+const search = document.getElementById("searchInput");
 
-    let cards = document.getElementsByClassName("card");
+if(search){
 
-    for(let i=0;i<cards.length;i++){
+search.addEventListener("keyup", () => {
 
-        let text = cards[i].innerText.toLowerCase();
+const value = search.value.toLowerCase().trim();
 
-        if(text.includes(input)){
-            cards[i].style.display="block";
-        }else{
-            cards[i].style.display="none";
-        }
+const cards = document.querySelectorAll(".card");
 
-    }
+cards.forEach(card=>{
+
+const text = card.innerText.toLowerCase();
+
+card.style.display = text.includes(value) ? "block" : "none";
+
+});
+
+});
 
 }
+
+});document.addEventListener("DOMContentLoaded", () => {
+
+const search = document.getElementById("searchInput");
+
+if(search){
+
+search.addEventListener("keyup", () => {
+
+const value = search.value.toLowerCase().trim();
+
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+
+const text = card.innerText.toLowerCase();
+
+card.style.display = text.includes(value) ? "block" : "none";
+
+});
+
+});
+
+}
+
+});

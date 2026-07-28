@@ -893,3 +893,95 @@ url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fi
 background-size:cover;
 background-position:center;
 }
+.section h1{
+font-size:48px;
+margin-bottom:30px;
+text-align:center;
+color:#2563eb;
+}
+
+.card h2{
+color:#2563eb;
+margin-bottom:15px;
+font-size:24px;
+}
+
+.card ul{
+padding-left:22px;
+}
+
+.card li{
+margin:10px 0;
+}
+
+.card a{
+word-break:break-word;
+}
+
+.card{
+border:1px solid #e5e7eb;
+}
+
+header{
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+footer{
+margin-top:0;
+}
+
+.logo{
+letter-spacing:1px;
+}
+
+nav a{
+padding:8px 12px;
+border-radius:8px;
+}
+
+nav a:hover{
+background:#1e3a8a;
+color:#fff;
+}
+
+.grid{
+align-items:stretch;
+}
+
+.card{
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+
+.card a{
+margin-top:20px;
+text-align:center;
+}
+
+.hero p{
+max-width:800px;
+}
+
+.section{
+max-width:1400px;
+margin:auto;
+}
+
+img{
+max-width:100%;
+height:auto;
+}
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+background:#2563eb;
+border-radius:10px;
+}
+
+::-webkit-scrollbar-track{
+background:#f1f5f9;
+}

@@ -985,3 +985,63 @@ border-radius:10px;
 ::-webkit-scrollbar-track{
 background:#f1f5f9;
 }
+#themeToggle{
+position:fixed;
+right:20px;
+bottom:20px;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:#2563eb;
+color:#fff;
+font-size:22px;
+cursor:pointer;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+z-index:9999;
+}
+
+.dark{
+background:#0f172a;
+color:#f8fafc;
+}
+
+.dark header{
+background:#020617;
+}
+
+.dark footer{
+background:#020617;
+}
+
+.dark .card{
+background:#1e293b;
+color:#fff;
+border:1px solid #334155;
+}
+
+.dark .stat{
+background:#1e293b;
+color:#fff;
+}
+
+.dark input,
+.dark textarea{
+background:#1e293b;
+color:#fff;
+border:1px solid #475569;
+}
+
+.dark a{
+color:#60a5fa;
+}
+
+.dark .btn{
+background:#2563eb;
+color:#fff;
+}
+
+.dark .btn-dark{
+background:#fff;
+color:#111;
+}

@@ -1,49 +1,21 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded",()=>{
 
-const search = document.getElementById("searchInput");
+const input=document.getElementById("searchInput");
 
-if(search){
+if(!input) return;
 
-search.addEventListener("keyup", () => {
+input.addEventListener("input",()=>{
 
-const value = search.value.toLowerCase().trim();
+const value=input.value.toLowerCase();
 
-const cards = document.querySelectorAll(".card");
+document.querySelectorAll(".card").forEach(card=>{
 
-cards.forEach(card=>{
+const text=card.innerText.toLowerCase();
 
-const text = card.innerText.toLowerCase();
-
-card.style.display = text.includes(value) ? "block" : "none";
+card.style.display=text.includes(value)?"flex":"none";
 
 });
 
 });
-
-}
-
-});document.addEventListener("DOMContentLoaded", () => {
-
-const search = document.getElementById("searchInput");
-
-if(search){
-
-search.addEventListener("keyup", () => {
-
-const value = search.value.toLowerCase().trim();
-
-const cards = document.querySelectorAll(".card");
-
-cards.forEach(card=>{
-
-const text = card.innerText.toLowerCase();
-
-card.style.display = text.includes(value) ? "block" : "none";
-
-});
-
-});
-
-}
 
 });

@@ -399,6 +399,51 @@ section{ padding: 64px 0; }
 .page-hero .eyebrow{ margin-bottom: 14px; }
 .page-hero p{ max-width: 640px; font-size: 1.05rem; }
 
+/* ---------- search ---------- */
+.search-bar{
+  margin: 0 0 34px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 560px;
+}
+.search-bar svg{ flex-shrink: 0; color: var(--gold); }
+.search-bar input[type="search"]{
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--ink-3);
+  color: var(--text-light);
+  font-family: var(--font-body);
+  font-size: .95rem;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.search-bar input[type="search"]::placeholder{ color: var(--muted-dark); }
+.search-bar input[type="search"]:focus{
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+  border-color: var(--gold);
+}
+.search-bar input[type="search"]::-webkit-search-cancel-button{ cursor: pointer; }
+.search-meta{
+  font-family: var(--font-mono);
+  font-size: .72rem;
+  letter-spacing: .05em;
+  color: var(--muted-dark);
+  margin: -14px 0 30px;
+}
+.search-empty{
+  font-family: var(--font-mono);
+  font-size: .9rem;
+  color: var(--muted);
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  padding: 22px;
+}
+.ticket[hidden]{ display: none; }
+
 @media (max-width: 720px){
   .pass{ grid-template-columns: 1fr; }
   .pass__main{ border-right: none; border-bottom: 2px dashed #C9BB8F; }

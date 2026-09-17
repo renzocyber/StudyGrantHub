@@ -1,68 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-margin:0;
-font-family:Arial;
-background:#f4f6fb;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7fb;
+    color:#333;
 }
 
 header{
-background:#003366;
-color:white;
-padding:40px;
-text-align:center;
+    background:#0057b8;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
 }
 
 nav{
-background:#0055aa;
-padding:15px;
-text-align:center;
+    background:#003f88;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:15px;
 }
 
 nav a{
-color:white;
-text-decoration:none;
-margin:20px;
-font-weight:bold;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffd43b;
 }
 
 .hero{
-padding:50px;
-text-align:center;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h2{
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
 }
 
 .countries{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-padding:30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:40px;
 }
 
 .card{
-background:white;
-width:260px;
-padding:20px;
-border-radius:15px;
-box-shadow:0 0 15px rgba(0,0,0,.15);
-text-align:center;
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+    text-align:center;
 }
 
-button{
-background:#0066ff;
-color:white;
-padding:10px 20px;
-border:none;
-border-radius:8px;
-cursor:pointer;
+.card:hover{
+    transform:translateY(-8px);
 }
 
-button:hover{
-background:#004dcc;
+.card h3{
+    margin-bottom:15px;
 }
 
 footer{
-background:#003366;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
+    background:#003f88;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:#0057b8;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#003f88;
 }

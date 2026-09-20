@@ -1,0 +1,38 @@
+[
+  {
+    "country": "Венгрия",
+    "program": "Stipendium Hungaricum",
+    "url": "countries/hungary.html",
+    "funding": "Полное финансирование"
+  },
+  {
+    "country": "Турция",
+    "program": "Türkiye Scholarships",
+    "url": "countries/turkey.html",
+    "funding": "Полное финансирование"
+  },
+  {
+    "country": "Германия",
+    "program": "DAAD",
+    "url": "countries/germany.html",
+    "funding": "Магистратура и PhD"
+  },
+  {
+    "country": "Великобритания",
+    "program": "Chevening",
+    "url": "countries/uk.html",
+    "funding": "Полное финансирование"
+  },
+  {
+    "country": "США",
+    "program": "Fulbright",
+    "url": "countries/usa.html",
+    "funding": "Полное финансирование"
+  },
+  {
+    "country": "Канада",
+    "program": "Vanier Scholarships",
+    "url": "countries/canada.html",
+    "funding": "PhD"
+  }
+]

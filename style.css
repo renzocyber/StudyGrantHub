@@ -135,3 +135,25 @@ footer{
     background:#ffd43b;
     color:#003f88;
 }
+.search-section{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.search-section input{
+    width:70%;
+    max-width:600px;
+    padding:15px;
+    font-size:18px;
+    border-radius:10px;
+    border:2px solid #0057b8;
+}
+.popular{
+    padding:60px 20px;
+}
+
+.popular h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:36px;
+}
